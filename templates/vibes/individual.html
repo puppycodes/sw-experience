@@ -26,13 +26,14 @@
 <div class="people"> 25 people are feeling <span> {{ item.name }} </span> </div>
 
 {% set data = cms.vibes %}
-<div class="main-image" {% if object.image == null_value %} style="margin-top:0px !important; margin-bottom:0px !important;"{% endif %}> <img class="img-responsive" {% if object.image == null_value %} test {% endif %}  src="{{ item.image|imageSize(200, 200) }}" /></div>
+
+<div class="main-image" {% if item.image == null_value %} style="margin-top:0px !important; margin-bottom:0px !important;"{% endif %}> <img class="img-responsive" {% if item.image == null_value %} style="display:none;" {% endif %}  src="{{ item.image|imageSize(200, 200) }}" /></div>
 
 
 <div class="vimeo">
 {{ item.vimeo|safe }}
 </div>
-<div {% if object.image == null_value %} style="margin-top:0px" {% endif %} class="soundcloud">
+<div {% if item.image == null_value %} style="margin-top:0px" {% endif %} class="soundcloud">
         {{ item.soundcloud|safe }}
 </div>
       </li>
