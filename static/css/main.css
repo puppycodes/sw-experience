@@ -160,6 +160,8 @@ figure[data-type=video] {
     width: 100%;
     float: left;
     margin-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 
