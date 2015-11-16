@@ -33,11 +33,8 @@
 <div class="vimeo">
 {{ item.vimeo|safe }}
 </div>
-<div {% if item.image == null_value %} style="margin-top:0px" {% endif %} class="soundcloud">
-        {{ item.soundcloud|safe }}
-</div>
+<div {% if item.image == null_value %} style="margin-top:0px" {% endif %} class="soundcloud">{{ item.soundcloud|safe }}</div>
       </li>
   </ul>
-
 </div>
 {% endblock %}
