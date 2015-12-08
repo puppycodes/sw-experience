@@ -43,6 +43,18 @@
     {# Useful block for loading outside scripts in other pages. #}
     {% block head_extra %}{% endblock %}
       <link rel="stylesheet" href="/static/css/main.css"/>
+
+      <script type="text/javascript">
+        var _StatHat = _StatHat || [];
+        _StatHat.push(['_setUser', 'MTE0MzEg_LNQ4snsP3tS0V5yAdEsIw~~']);
+        (function() {
+                var sh = document.createElement('script'); sh.type = 'text/javascript';
+                sh.async = true;
+                sh.src = '//www.stathat.com/javascripts/api.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(sh, s);
+        })();
+</script>
   </head>
   <body>
     {% block body %}
